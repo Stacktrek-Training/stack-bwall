@@ -4,8 +4,9 @@ import User from "../components/assets/Pragados.png";
 import 'flowbite';
 const Navbar = () => {
   return (
-    <body>
-      <div>
+      <body>
+      <div> 
+        
         <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center">
@@ -95,6 +96,7 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
+        
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     </body>
