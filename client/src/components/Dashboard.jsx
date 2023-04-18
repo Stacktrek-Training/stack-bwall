@@ -1,14 +1,17 @@
 import React from "react";
 import Logo from "../components/assets/stackwall.png";
 import "flowbite";
+import Events from "./columns/Events";
+import Topfeed from "./columns/Topfeed";
+
 const Dashboard = () => {
   return (
     <body className="grid grid-cols-3 ">
       <div>
-        <div class="flex flex-col fixed top-6 left-6 group mt-16 mr-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col fixed top-6 left-6 group mt-16 mr-2 w-min max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex items-center justify-between mb-4">
             <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
-              Latest Customers
+              Top Leaderboard
             </h5>
             <a
               href="#"
