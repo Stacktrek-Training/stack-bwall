@@ -1,26 +1,25 @@
 import React from "react";
 import Logo from "../components/assets/stackwall.png";
-import "flowbite";
+import 'flowbite';
 const Dashboard = () => {
   return (
     <body className="grid grid-cols-3 ">
       <div>
-        <div class="flex flex-col fixed top-6 left-6 group mt-16 mr-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col fixed top-6 left-6 group mt-16 mr-2 w-80 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex items-center justify-between mb-4">
-            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
-              Latest Customers
-            </h5>
-            <a
-              href="#"
-              class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
-            >
+          <h2 class="text-xl font-bold leading-none text-gray-900 dark:text-white text-center ">
+        Top Leaderboard
+        </h2>
+        <a 
+        href="#" 
+        class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500 flex items-center ">
               View all
             </a>
           </div>
           <div class="flow-root">
             <ul
               role="list"
-              class="divide-y divide-gray-200 dark:divide-gray-700"
+              class="divide-y divide-gray-200 dark:divide-gray-600"
             >
               <li class="py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
