@@ -1,115 +1,46 @@
-import React from 'react'
+import React from "react";
 import 'flowbite';
 
 const Events = () => {
   return (
     <body>
-        <div
-          id="default-carousel"
-          class="relative "
-          data-carousel="static"
-        >
-          <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <span class="block absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">
-                Primer Slide
-              </span>
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
-                alt="..."
-              />
-            </div>
-          </div>
-
-          <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-          </div>
-
-          <button
-            type="button"
-            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-              <svg
-                class="w-5 h-5 text-white sm:w-6 sm:h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 19l-7-7 7-7"
-                ></path>
-              </svg>
-              <span class="hidden">Anterior</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-              <svg
-                class="w-5 h-5 text-white sm:w-6 sm:h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
-                ></path>
-              </svg>
-            </span>
-          </button>
+        
+<div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
+    <div class="relative h-56 overflow-hidden rounded-lg mt:h-96">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
+        </div>
+    </div>
+    <div class="flex justify-center items-center pt-4">
+        <button type="button" class="flex justify-center items-center mr-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+</div>
+
         <div>
-        <div class="flex flex-col fixed align-middle mt-8n mr-2 w-96 max-w-sm bg-white border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col fixed align-middle mt-4 mr-2 w-screen max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div class="flex items-center justify-center mb-4">
           <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
             Top Favorite Campers
@@ -127,8 +58,8 @@ const Events = () => {
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    Neil Sims
+                  <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    Joseph Angelo Progados
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                     Students
@@ -152,7 +83,7 @@ const Events = () => {
                 </div>
                 <div class="flex-1 min-w-0">
                   <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    Thomes Lean
+                    Vonnn Einuj Anre Sabusap
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                     Students
