@@ -7,7 +7,7 @@ const Leaderboard = () => {
       <div class="flex flex-col fixed top-6 left-6 group mt-16 mr-2 w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <div class="flex items-center justify-between mb-4">
           <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
-            Latest Customers
+            Top Leaderboard
           </h5>
           <a
             href="#"
@@ -37,6 +37,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $320
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -59,6 +62,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $3467
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -81,6 +87,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $67
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -103,6 +112,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $367
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -125,6 +137,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $2367
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -147,6 +162,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $2367
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -169,6 +187,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $2367
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -191,6 +212,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $2367
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>
@@ -213,6 +237,9 @@ const Leaderboard = () => {
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                   $2367
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    points
+                  </p>
                 </div>
               </div>
             </li>

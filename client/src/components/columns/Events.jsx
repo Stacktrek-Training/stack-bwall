@@ -109,17 +109,11 @@ const Events = () => {
           </button>
         </div>
         <div>
-        <div class="flex flex-col fixed align-middle mt-8 mr-2 w-96 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex flex-col fixed align-middle mt-8n mr-2 w-96 max-w-sm bg-white border border-white rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-center justify-center mb-4">
           <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
             Top Favorite Campers
           </h5>
-          <a
-            href="#"
-            class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
-          >
-            View all
-          </a>
         </div>
         <div class="flow-root">
           <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
@@ -137,11 +131,37 @@ const Events = () => {
                     Neil Sims
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    email@windster.com
+                    Students
                   </p>
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $320
+                <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+</svg> 5000
+                </div>
+              </div>
+            </li> 
+            <li class="pt-3 pb-0 sm:pt-4">
+              <div class="flex items-center space-x-4">
+                <div class="flex-shrink-0">
+                  <img
+                    class="w-8 h-8 rounded-full"
+                    src="/docs/images/people/profile-picture-5.jpg"
+                    alt="Thomas image"
+                  />
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    Thomes Lean
+                  </p>
+                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                    Students
+                  </p>
+                </div>
+                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+</svg> 4000
                 </div>
               </div>
             </li>
@@ -159,33 +179,13 @@ const Events = () => {
                     Thomes Lean
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    email@windster.com
+                    Students
                   </p>
                 </div>
                 <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $2367
-                </div>
-              </div>
-            </li>
-            <li class="pt-3 pb-0 sm:pt-4">
-              <div class="flex items-center space-x-4">
-                <div class="flex-shrink-0">
-                  <img
-                    class="w-8 h-8 rounded-full"
-                    src="/docs/images/people/profile-picture-5.jpg"
-                    alt="Thomas image"
-                  />
-                </div>
-                <div class="flex-1 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    Thomes Lean
-                  </p>
-                  <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    email@windster.com
-                  </p>
-                </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
-                  $2367
+                <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+</svg> 3000
                 </div>
               </div>
             </li>
