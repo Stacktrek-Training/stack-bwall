@@ -1,7 +1,8 @@
 .Feed {
-  width: 100%;
-  max-height: 300px;
-  margin-left: 970px;
+  width: 68%;
+  max-height: 210px;
+  margin-left: 1030px;
   overflow-y: scroll;
-  margin-top: 90px;
+  margin-top: 70px;
+  border-style: solid;
 }
