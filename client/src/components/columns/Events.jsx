@@ -5,21 +5,21 @@ const Events = () => {
   return (
     <body>
         
-<div id="custom-controls-gallery" class="relative w-full" data-carousel="slide">
-    <div class="relative h-56 overflow-hidden rounded-lg mt:h-96">
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+<div id=" custom-controls-gallery" class="relative w-full" data-carousel="slide">
+    <div class="relative h-64 overflow-hidden rounded-lg mt-4">
+        <div class=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <div class=" duration-700 ease-in-out" data-carousel-item="active">
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div class=" duration-700 ease-in-out" data-carousel-item>
             <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="" />
         </div>
     </div>
