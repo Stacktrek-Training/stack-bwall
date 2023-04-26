@@ -1,10 +1,10 @@
 import React from "react";
-import 'flowbite';
+import "flowbite";
 
 const Leaderboard = () => {
   return (
     <>
-       <div>
+      <div>
         <div class="flex flex-col fixed top-6 left-6 group mt-16 mr-2 w-64 max-w-sm dark:bg-white-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-900">
           <div class="flex items-center justify-between mb-4">
             <h5 class="text-xl font-bold leading-none text-black dark:text-white">
@@ -24,8 +24,7 @@ const Leaderboard = () => {
             >
               <li class="py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Neil Sims
@@ -35,19 +34,18 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    3205
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      3205
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Bonnie Green
@@ -57,19 +55,18 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    3201
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      3201
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Michael Gough
@@ -79,19 +76,18 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    3203
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      3203
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="py-3 sm:py-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Lana Byrd
@@ -101,19 +97,18 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    3150
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      3150
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Thomes Lean
@@ -123,19 +118,18 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    3140
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      3140
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Thomes Lean
@@ -145,19 +139,18 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    3120
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      3120
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
-                  </div>
+                  <div class="flex-shrink-0"></div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Thomes Lean
@@ -167,12 +160,12 @@ const Leaderboard = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                    $3110
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                      $3110
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                    points
-                  </p>
+                      points
+                    </p>
                   </div>
                 </div>
               </li>
