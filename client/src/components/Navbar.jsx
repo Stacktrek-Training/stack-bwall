@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <div>
         <nav class="border-gray-200 bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
-          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1.5">
             <a href="#" class="flex items-center">
               <img src={Logo} class="h-8 mr-3" alt="stackbwall Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

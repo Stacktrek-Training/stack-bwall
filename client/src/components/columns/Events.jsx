@@ -95,7 +95,7 @@ const Events = () => {
       </div>
 
       <div>
-        <div class="flex flex-col fixed align-middle mt-4 mr-2 w-full w max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col align-middle mt-4 mr-2 w-full w max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
               Top Favorite Campers

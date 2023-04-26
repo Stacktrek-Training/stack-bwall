@@ -4,7 +4,7 @@ import "flowbite";
 const Feeds = () => {
   return (
     <>
-      <div class="p-5 mb-4 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+      <div class="p-5 mt-4 border border-gray-400 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
         <time class="text-lg font-semibold text-gray-900 dark:text-white">
           January 13th, 2022
         </time>
@@ -99,7 +99,7 @@ const Feeds = () => {
           </li>
         </ol>
       </div>
-      <div class="p-5 border border-gray-100 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+      <div class="p-5 border border-gray-00 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
         <time class="text-lg font-semibold text-gray-900 dark:text-white">
           January 12th, 2022
         </time>
@@ -267,7 +267,7 @@ const Feeds = () => {
                 <div class="text-sm font-normal">
                   "I wanted to share a webinar zeroheight."
                 </div>
-                <span class="inline-flex items-center text-xs font-normal text-gray-500 dark:text-gray-400">
+                <span class="inline-flex items-center text-xs font-normal text-gray-700 dark:text-gray-400">
                   <svg
                     aria-hidden="true"
                     class="w-3 h-3 mr-1"

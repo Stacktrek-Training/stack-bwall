@@ -10,7 +10,7 @@ import "./columns/style.css";
 const Dashboard = () => {
   return (
     <body className="grid grid-cols-3 ">
-      <div>
+      <div className="Leaderboard">
         <Leaderboard />
       </div>
 
@@ -18,12 +18,12 @@ const Dashboard = () => {
         <Events />
       </div>
 
-      <div>
-        <Topfeed />
-      </div>
-
       <div className="Feed">
         <Feeds />
+      </div>
+
+      <div>
+        <Topfeed />
       </div>
     </body>
   );
