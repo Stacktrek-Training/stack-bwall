@@ -1,6 +1,6 @@
 .Feed {
   width: 75%;
-  max-height: 340px;
+  max-height: 360px;
   margin-left: 100px;
   overflow-y: scroll;
 }

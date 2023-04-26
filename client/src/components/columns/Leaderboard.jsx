@@ -5,9 +5,9 @@ const Leaderboard = () => {
   return (
     <>
       <div>
-        <div class="flex-auto mt-4 mr-4 w-fit max-w-sm dark:bg-white-200 border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-900">
+        <div class="flex-auto mt-4 mr-4 w-fit max-w-sm dark:bg-white-400 border border-gray-400 rounded-lg shadow bg-gray-100 dark:border-gray-900">
           <div class="flex items-center justify-center mb-4">
-            <h5 class="text-xl font-bold leading-none text-black dark:text-white">
+            <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Top Leaderboard
             </h5>
           </div>

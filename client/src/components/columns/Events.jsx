@@ -6,7 +6,7 @@ const Events = () => {
     <body>
       <div
         id=" custom-controls-gallery"
-        class="relative w-full"
+        class="relative w-full "
         data-carousel="slide"
       >
         <div class="relative h-64 overflow-hidden rounded-lg mt-4">
@@ -95,9 +95,9 @@ const Events = () => {
       </div>
 
       <div>
-        <div class="flex flex-col align-middle mt-4 mr-2 w-full w max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-col align-middle mt-4 mr-2 w-full bg-gray-100 border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <div class="flex items-center justify-center mb-4">
-            <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">
+            <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
               Top Favorite Campers
             </h5>
           </div>
@@ -152,7 +152,7 @@ const Events = () => {
                     />
                   </div>
                   <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
                       Vonnn Einuj Anre Sabusap
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -188,7 +188,7 @@ const Events = () => {
                     />
                   </div>
                   <div class="flex-1 min-w-0">
-                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
                       Thomes Lean
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">

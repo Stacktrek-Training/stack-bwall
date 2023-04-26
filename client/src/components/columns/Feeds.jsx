@@ -4,7 +4,13 @@ import "flowbite";
 const Feeds = () => {
   return (
     <>
+      <div></div>
       <div class="p-5 mt-4 border border-gray-400 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-center justify-center mb-4">
+          <h3 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
+            Feeds
+          </h3>
+        </div>
         <time class="text-lg font-semibold text-gray-900 dark:text-white">
           January 13th, 2022
         </time>
