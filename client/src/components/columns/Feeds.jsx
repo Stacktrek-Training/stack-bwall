@@ -3,13 +3,14 @@ import "flowbite";
 import User3 from "../assets/icon3.jpg";
 import User4 from "../assets/icon4.png";
 import User5 from "../assets/icon5.jpg";
+import "./style.css";
 
 const Feeds = () => {
   return (
     // Top of the Month Section
     <>
       <div>
-        <div class="flex flex-col align-middle mt-4 w-82 bg-gray-100 border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="px-2 flex flex-col align-middle mt-4 w-82 bg-gray-100 Shadow rounded-lg  dark:bg-gray-800 dark:border-gray-700">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
               Top of the Month
@@ -134,7 +135,7 @@ const Feeds = () => {
       </div>
 
       {/* Feeds Section */}
-      <div class="p-1.5 mt-4 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-2xl shadow-outline">
+      <div class="p-1.5 mt-4 rounded-lg bg-gray-100 dark:bg-gray-800 Shadow">
         <div class="flex items-center justify-center mb-0">
           <h3 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
             Feeds

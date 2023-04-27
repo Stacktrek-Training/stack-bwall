@@ -3,16 +3,17 @@ import "flowbite";
 import User from "../assets/icon.jpg";
 import User1 from "../assets/icon1.jpg";
 import User2 from "../assets/icon2.jpg";
+import "./style.css";
 
 const Events = () => {
   return (
-    <body>
+    <>
       <div
         id=" custom-controls-gallery"
-        class="relative w-full"
+        class="relative w-full "
         data-carousel="slide"
       >
-        <div class="relative h-72 overflow-hidden rounded-lg mt-4">
+        <div class="relative h-72 flex-wrap overflow-hidden rounded-lg mt-4">
           <div class=" duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
@@ -98,13 +99,18 @@ const Events = () => {
       </div>
 
       <div>
-        <div class="flex flex-col align-middle mt-8 w-82 bg-gray-100 border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-          <div class="flex items-center justify-center mb-12">
+        <div class="Shadow pl-8 py-2 flex flex-col align-middle mt-8 w-82 bg-gray-100 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+          <div class="grid grid-flow-col  mb-3 mt-5 text-center">
             <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
-              Top Favorite Campers
+              Top Favorite
+            </h5>
+            <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
+              Top Performers
             </h5>
           </div>
           <div className="grid grid-cols-2">
+            {/* Top Voted */}
+
             <div class="flex">
               <div>
                 <ul
@@ -131,7 +137,7 @@ const Events = () => {
                       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          fill="red"
+                          fill="blue"
                           viewBox="0 0 24 24"
                           stroke-width=".5"
                           stroke="currentColor"
@@ -167,7 +173,7 @@ const Events = () => {
                       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          fill="red"
+                          fill="blue"
                           viewBox="0 0 24 24"
                           stroke-width=".5"
                           stroke="currentColor"
@@ -203,7 +209,7 @@ const Events = () => {
                       <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          fill="red"
+                          fill="blue"
                           viewBox="0 0 24 24"
                           stroke-width=".5"
                           stroke="currentColor"
@@ -222,7 +228,9 @@ const Events = () => {
                 </ul>
               </div>
             </div>
-            {/* end of flex */}
+
+            {/* Top Performers */}
+
             <div class="flex">
               <div>
                 <ul
@@ -346,7 +354,7 @@ const Events = () => {
       <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
       <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    </body>
+    </>
   );
 };
 

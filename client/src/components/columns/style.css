@@ -3,7 +3,9 @@
   max-height: 320px;
   margin-left: 100px;
 }
-
+.Shadow {
+  box-shadow: 3px -1px 10px 2px rgba(43, 43, 43, 0.952);
+}
 /* .Leaderboard {
   margin-left: 100px;
 } */

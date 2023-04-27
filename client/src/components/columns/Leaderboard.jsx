@@ -7,7 +7,7 @@ const Leaderboard = () => {
   return (
     <>
       <div>
-        <div class="flex-auto mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 border border-gray-200 rounded-lg shadow bg-gray-100 dark:border-gray-100">
+        <div class="px-2 py-3 flex-wrap mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 Shadow  rounded-lg bg-gray-100 dark:border-gray-100">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Top Leaderboard
@@ -280,7 +280,7 @@ const Leaderboard = () => {
                   </div>
                   <div class="flex-2 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                      $3110
+                      3110
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                       points
