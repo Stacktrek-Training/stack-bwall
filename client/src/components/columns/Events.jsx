@@ -109,7 +109,7 @@ const Events = () => {
               <div>
                 <ul
                   role="list"
-                  class="divide-y divide-gray-200 dark:divide-gray-700"
+                  class="divide-y divide-blue-600 dark:divide-gray-700"
                 >
                   <li class="py-4 sm:py-4">
                     <div class="flex items-center space-x-4">

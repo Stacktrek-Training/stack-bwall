@@ -6,6 +6,7 @@ import User5 from "../assets/icon5.jpg";
 
 const Feeds = () => {
   return (
+    // Top of the Month Section
     <>
       <div>
         <div class="flex flex-col align-middle mt-4 w-82 bg-gray-100 border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -131,7 +132,9 @@ const Feeds = () => {
           </div>
         </div>
       </div>
-      <div class="p-1.5 mt-4 border border-gray-400 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+
+      {/* Feeds Section */}
+      <div class="p-1.5 mt-4 rounded-lg bg-gray-100 dark:bg-gray-800 shadow-2xl shadow-outline">
         <div class="flex items-center justify-center mb-0">
           <h3 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
             Feeds
@@ -231,7 +234,6 @@ const Feeds = () => {
           </li>
         </ol>
       </div>
-      
 
       <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
