@@ -1,10 +1,9 @@
 .Feed {
   width: 75%;
-  max-height: 360px;
+  max-height: 370px;
   margin-left: 100px;
-  overflow-y: scroll;
 }
 
-.Leaderboard {
-  margin-left: 50px;
-}
+/* .Leaderboard {
+  margin-left: 100px;
+} */

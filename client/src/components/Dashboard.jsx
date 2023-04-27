@@ -8,19 +8,18 @@ import "./columns/style.css";
 
 const Dashboard = () => {
   return (
-    <body className="grid grid-cols-3 ">
+    <body className="grid grid-cols-4 px-5">
       <div className="Leaderboard">
         <Leaderboard />
       </div>
 
-      <div>
+      <div className="col-span-2">
         <Events />
       </div>
 
       <div className="Feed">
         <Feeds />
       </div>
-
     </body>
   );
 };
