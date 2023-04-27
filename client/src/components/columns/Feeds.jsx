@@ -1,5 +1,8 @@
 import React from "react";
 import "flowbite";
+import User3 from "../assets/icon3.jpg";
+import User4 from "../assets/icon4.png";
+import User5 from "../assets/icon5.jpg";
 
 const Feeds = () => {
   return (
@@ -21,7 +24,7 @@ const Feeds = () => {
                   <div class="flex-shrink-0">
                     <img
                       class="w-8 h-8 rounded-full"
-                      src="/docs/images/people/profile-picture-1.jpg"
+                      src={User3}
                       alt="Neil image"
                     />
                   </div>
@@ -57,7 +60,7 @@ const Feeds = () => {
                   <div class="flex-shrink-0">
                     <img
                       class="w-8 h-8 rounded-full"
-                      src="/docs/images/people/profile-picture-5.jpg"
+                      src={User4}
                       alt="Thomas image"
                     />
                   </div>
@@ -93,7 +96,7 @@ const Feeds = () => {
                   <div class="flex-shrink-0">
                     <img
                       class="w-8 h-8 rounded-full"
-                      src="/docs/images/people/profile-picture-5.jpg"
+                      src={User5}
                       alt="Thomas image"
                     />
                   </div>
@@ -128,8 +131,8 @@ const Feeds = () => {
           </div>
         </div>
       </div>
-      <div class="p-5 mt-4 border border-gray-400 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex items-center justify-center mb-4">
+      <div class="p-1.5 mt-4 border border-gray-400 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-center justify-center mb-0">
           <h3 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
             Feeds
           </h3>
@@ -145,7 +148,7 @@ const Feeds = () => {
             >
               <img
                 class="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                src="/docs/images/people/profile-picture-1.jpg"
+                src={User4}
                 alt="Jese Leos image"
               />
               <div class="text-gray-600 dark:text-gray-400">
@@ -192,7 +195,7 @@ const Feeds = () => {
             >
               <img
                 class="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
-                src="/docs/images/people/profile-picture-3.jpg"
+                src={User5}
                 alt="Bonnie Green image"
               />
               <div>

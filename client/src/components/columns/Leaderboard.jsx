@@ -1,11 +1,13 @@
 import React from "react";
 import "flowbite";
+import User from "../assets/icon.jpg"
+import User1 from "../assets/icon1.jpg"
 
 const Leaderboard = () => {
   return (
     <>
       <div>
-        <div class="flex-auto mt-4 mr-4 w-fit max-w-sm dark:bg-white-400 border border-gray-400 rounded-lg shadow bg-gray-100 dark:border-gray-900">
+        <div class="flex-auto mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 border border-gray-400 rounded-lg shadow bg-gray-100 dark:border-gray-900">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Top Leaderboard
@@ -18,10 +20,16 @@ const Leaderboard = () => {
             >
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                      Edvenson Jay Melocotones Miguel
+                      Edvenson Jay
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                       email@windster.com
@@ -39,7 +47,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User1}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Vonnn einuj anre sabusap
@@ -60,7 +74,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Michael Gough
@@ -81,7 +101,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Lana Byrd
@@ -102,7 +128,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Thomes Lean
@@ -123,7 +155,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Thomes Lean
@@ -144,7 +182,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Bonnie Green
@@ -165,7 +209,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Bonnie Green
@@ -186,7 +236,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Bonnie Green
@@ -207,7 +263,13 @@ const Leaderboard = () => {
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0"></div>
+                  <div class="flex-shrink-0">
+                    <img
+                      class="w-8 h-8 rounded-full"
+                      src={User}
+                      alt="Thomas image"
+                    />
+                  </div>
                   <div class="flex-1 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Thomes Lean
