@@ -5,14 +5,16 @@ CREATE TABLE users(
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    password VARCHAR(255) NOT NULL,
+    user_image BYTEA
 );
 
---example users
--- INSERT INTO
---     users (id, first_name, last_name, email, password)
--- VALUES
--- ('kapid', 'kashi', 'kapid@gmail.com', 'kapidkashi');
+
+CREATE TABLE points (
+    point_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    points_per_event INTEGER
+);
 
 CREATE TABLE events (
     event_id SERIAL PRIMARY KEY,
@@ -22,9 +24,18 @@ CREATE TABLE events (
     date VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL
 );
+ 
+-- example table
+-- CREATE TABLE users_example (
+--     id SERIAL PRIMARY KEY,
+--     name VARCHAR(255) NOT NULL,
+--     email VARCHAR(255) NOT NULL,
+--     points INTEGER
+-- );
 
-CREATE TABLE points (
-    point_id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    points_per_event INTEGER
-);
+-- CREATE TABLE events_example (
+--     id SERIAL PRIMARY KEY,
+--     name VARCHAR(255) NOT NULL,
+--     description VARCHAR(255) NOT NULL,
+--     event_points INTEGER
+-- );
