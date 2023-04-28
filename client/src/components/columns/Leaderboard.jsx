@@ -7,7 +7,7 @@ const Leaderboard = () => {
   return (
     <>
       <div>
-        <div class="px-2 py-3 flex-wrap mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 Shadow  rounded-lg bg-gray-100 dark:border-gray-100">
+        <div class="px-2 py-3 flex-wrap  mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 Shadow  rounded-lg bg-gray-100 dark:border-gray-100">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Top Leaderboard
