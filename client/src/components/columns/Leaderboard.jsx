@@ -7,10 +7,10 @@ const Leaderboard = () => {
   return (
     <>
       <div>
-        <div class="px-2 py-3 flex-wrap  mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 Shadow  rounded-lg bg-gray-100 dark:border-gray-100">
+        <div class="flex-auto px-1 py-1 mt-4 ml-16 w-72 dark:bg-white-400 rounded-lg bg-gray-100 dark:border-gray-100">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
-              Top Leaderboard
+              Leaderboard
             </h5>
           </div>
           <div class="flow-root">

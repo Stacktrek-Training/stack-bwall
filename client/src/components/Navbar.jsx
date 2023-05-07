@@ -5,7 +5,7 @@ import "flowbite";
 const Navbar = () => {
   return (
     <>
-      <div>
+      <div class="flex-auto">
         <nav class="border-gray-200 bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1.5">
             <a href="#" class="flex items-center">

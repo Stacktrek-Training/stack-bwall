@@ -13,7 +13,7 @@ const Events = () => {
         class="relative w-full "
         data-carousel="slide"
       >
-        <div class="relative h-72 flex-wrap overflow-hidden rounded-lg mt-4">
+        <div class="grid place-items-center min-h-fit shadow-lg shadow-offset-x-8 shadow-right relative h-72 flex-wrap overflow-hidden rounded-lg mt-4 ml-12">
           <div class=" duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
@@ -99,19 +99,19 @@ const Events = () => {
       </div>
 
       <div>
-        <div class="Shadow pl-8 py-2 flex flex-col align-middle mt-8 w-82 bg-gray-100 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+        <div class="pl-8 py-2 flex flex-col align-middle mt-8 w-82 bg-gray-100 rounded-lg dark:bg-gray-800 dark:border-gray-700">
           <div class="grid grid-flow-col  mb-3 mt-5 text-center">
             <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
               Top Favorite
             </h5>
-            <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
+            <h5 class="text-xl font-bold leadingA-none text-orange-500  dark:text-white">
               Top Performers
             </h5>
           </div>
-          <div className="grid grid-cols-2">
+          <div class="grid grid-cols-2">
             {/* Top Voted */}
 
-            <div class="flex">
+            <div class="flex flex-auto  ">
               <div>
                 <ul
                   role="list"
