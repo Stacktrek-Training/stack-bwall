@@ -6,8 +6,8 @@ import User1 from "../assets/icon1.jpg";
 const Leaderboard = () => {
   return (
     <>
-      <div>
-        <div class="flex-auto px-1 py-1 mt-4 ml-16 w-72 dark:bg-white-400 rounded-lg bg-gray-100 dark:border-gray-100">
+      <div class="flex items-center justify-center px-8">
+        <div class="flex-auto p-8 shadow-lg mt-4  w-72 dark:bg-white-400 rounded-lg bg-gray-100 dark:border-gray-100">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Leaderboard
