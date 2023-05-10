@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../components/assets/stackwall.png";
 import User from "../components/assets/Pragados.png";
 import "flowbite";
 const Navbar = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+  };
   return (
     <>
       <div class="flex-auto">
@@ -42,7 +51,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </div>
-              <div>
+              <div onClick={handleModalOpen}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="blue"
@@ -58,6 +67,19 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
+              {modalOpen && (
+                <div className="modal fixed inset-0 flex items-center justify-end z-50">
+                  <div className="bg-white dark:bg-gray-900 rounded-lg border-black-800 p-8 mr-8 mt-8">
+                    <h2 className="text-xl font-semibold mb-4">
+                      Modal Content
+                    </h2>
+                    <p>Put your modal content here.</p>
+                    <button className="modal-close" onClick={handleModalClose}>
+                      Close
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </nav>
