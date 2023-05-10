@@ -5,7 +5,7 @@ import "flowbite";
 const Navbar = () => {
   return (
     <>
-      <div>
+      <div class="flex-auto">
         <nav class="border-gray-200 bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1.5">
             <a href="#" class="flex items-center">
@@ -29,7 +29,7 @@ const Navbar = () => {
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="yellow"
+                  fill="#FF7A0D"
                   viewBox="0 0 24 24"
                   stroke-width=".5"
                   stroke="currentColor"
@@ -45,7 +45,7 @@ const Navbar = () => {
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
+                  fill="blue"
                   viewBox="0 0 24 24"
                   stroke-width=".5"
                   stroke="currentColor"

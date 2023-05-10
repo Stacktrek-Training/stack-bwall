@@ -1,23 +1,20 @@
 import React from "react";
 import "flowbite";
-import User from "../assets/icon.jpg"
-import User1 from "../assets/icon1.jpg"
+import User from "../assets/icon.jpg";
+import User1 from "../assets/icon1.jpg";
 
 const Leaderboard = () => {
   return (
     <>
-      <div>
-        <div class="flex-auto mt-4 mr-4 w-72 max-w-sm dark:bg-white-400 border border-gray-400 rounded-lg shadow bg-gray-100 dark:border-gray-900">
+      <div class="flex items-center justify-center px-8">
+        <div class="flex-auto p-2 drop-shadow-xl mt-4 w-72 dark:bg-white rounded-lg bg-white dark:border-gray-300">
           <div class="flex items-center justify-center mb-4">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
-              Top Leaderboard
+              Leaderboard
             </h5>
           </div>
           <div class="flow-root">
-            <ul
-              role="list"
-              class="divide-y divide-gray-400 dark:divide-gray-700"
-            >
+            <ul role="list">
               <li class="pt-3 pb-0 sm:pt-4">
                 <div class="flex items-center space-x-4">
                   <div class="flex-shrink-0">
@@ -280,7 +277,7 @@ const Leaderboard = () => {
                   </div>
                   <div class="flex-2 min-w-0">
                     <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                      $3110
+                      3110
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                       points

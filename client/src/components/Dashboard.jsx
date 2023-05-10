@@ -8,7 +8,11 @@ import "./columns/style.css";
 
 const Dashboard = () => {
   return (
+<<<<<<< HEAD
     <body className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+=======
+    <body class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-h-screen overflow-x-hidden">
+>>>>>>> ddd2aba1a45598bd619f6d6e75b4ad125d52c825
       <div className="Leaderboard">
         <Leaderboard />
       </div>
