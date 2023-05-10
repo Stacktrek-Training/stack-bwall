@@ -10,17 +10,14 @@ const Feeds = () => {
     // Top of the Month Section
     <>
       <div>
-        <div class="px-1 flex flex-col align-middle mr-8 mt-4 w-82 bg-gray-100 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
-          <div class="flex items-center justify-center mb-4">
+        <div class="px-1 flex flex-col align-middle mr-12 mt-4 w-82 bg-white rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+          <div class="flex items-center justify-center mt-2">
             <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
               Top of the Month
             </h5>
           </div>
-          <div class="flow-root">
-            <ul
-              role="list"
-              class="divide-y divide-gray-200 dark:divide-gray-700"
-            >
+          <div class="flow-root items-center justify-center pr-4">
+            <ul>
               <li class="py-4 sm:py-4">
                 <div class="flex items-center space-x-4">
                   <div class="flex-shrink-0">
@@ -31,7 +28,7 @@ const Feeds = () => {
                     />
                   </div>
                   <div class="flex-1 min-w-0">
-                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Joseph Angelo Progados
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -39,7 +36,7 @@ const Feeds = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       3000
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -58,7 +55,7 @@ const Feeds = () => {
                     />
                   </div>
                   <div class="flex-1 min-w-0">
-                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Edvenson Jay Miguel
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -66,7 +63,7 @@ const Feeds = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       3000
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -85,7 +82,7 @@ const Feeds = () => {
                     />
                   </div>
                   <div class="flex-1 min-w-0">
-                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       Vonnn einuj anre sabusap
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -93,7 +90,7 @@ const Feeds = () => {
                     </p>
                   </div>
                   <div class="flex-2 min-w-0">
-                    <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                       3000
                     </p>
                     <p class="text-sm text-gray-500 truncate dark:text-gray-400">
@@ -107,7 +104,7 @@ const Feeds = () => {
         </div>
 
         {/* Feeds Section */}
-        <div class="md:flex-grow p-2 mr-8 mt-4 rounded-lg bg-gray-100 dark:bg-gray-800">
+        <div class="md:flex-grow p-2 mr-12 mt-4 rounded-lg bg-white dark:bg-gray-800">
           <div class="flex flex-auto items-center justify-center mb-0">
             <h3 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Feeds
@@ -123,7 +120,7 @@ const Feeds = () => {
                 class="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <img
-                  class="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
+                  class="w-10 h-110 mb-3 mr-3 rounded-full sm:mb-0"
                   src={User4}
                   alt="Jese Leos image"
                 />
@@ -137,10 +134,7 @@ const Feeds = () => {
                       Bonnie Green's
                     </span>{" "}
                     post in{" "}
-                    <span class="font-small text-gray-900 dark:text-white">
-                      {" "}
-                      How to start with Flowbite library
-                    </span>
+                    
                   </div>
                   <div class="text-sm font-normal">
                     "I wanted to share a webinar zeroheight."
@@ -170,7 +164,7 @@ const Feeds = () => {
                 class="items-center block p-3 sm:flex hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <img
-                  class="w-12 h-12 mb-3 mr-3 rounded-full sm:mb-0"
+                  class="w-10 h-10 mb-3 mr-3 rounded-full sm:mb-0"
                   src={User5}
                   alt="Bonnie Green image"
                 />

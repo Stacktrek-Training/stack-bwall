@@ -29,7 +29,7 @@ const Navbar = () => {
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="yellow"
+                  fill="#FF7A0D"
                   viewBox="0 0 24 24"
                   stroke-width=".5"
                   stroke="currentColor"
@@ -45,7 +45,7 @@ const Navbar = () => {
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="red"
+                  fill="blue"
                   viewBox="0 0 24 24"
                   stroke-width=".5"
                   stroke="currentColor"
