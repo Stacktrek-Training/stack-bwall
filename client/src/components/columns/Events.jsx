@@ -99,7 +99,7 @@ const Events = () => {
       </div>
 
       <div class="grid-col-1">
-        <div class="px-4 py-2 flex flex-col align-middle max-w-full dark:bg-white rounded-lg bg-gray-100 dark:border-gray-300">
+        <div class="px-4 py-2 mt-8 flex flex-col align-middle w-full bg-white rounded-lg shadow-lg bg-white dark:border-gray-700">
           <div class="grid grid-cols-2">
             {/* Top Voted */}
             <div class="p-2 grid grid-cols-1 px-2.5">

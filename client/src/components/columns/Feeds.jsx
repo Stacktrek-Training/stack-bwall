@@ -8,16 +8,16 @@ import ActivityLog from "./ActivityLog";
 const Feeds = () => {
   return (
     <>
-      <div class="px-2 flex flex-col align-middle mr-8 mt-4 w-82 bg-gray-100 border border-gray-400 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex items-center justify-center mb-4">
+      <div class="px-1 flex flex-col align-middle mr-8 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg">
+        <div class="flex items-center justify-center ">
           <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
             Top of the Month
           </h5>
         </div>
         <div class="flow-root">
           <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-            <li class="py-4 sm:py-8">
-              <div class="flex items-center space-x-4">
+            <li class="py-2 sm:py-8">
+              <div class="flex items-center space-x-2">
                 <div class="flex-shrink-0">
                   <img
                     class="w-8 h-8 rounded-full"
@@ -52,8 +52,8 @@ const Feeds = () => {
                 </div>
               </div>
             </li>
-            <li class="pt-3 pb-0 sm:pt-4">
-              <div class="flex items-center space-x-4">
+            <li class="pt-1 sm:pt-2">
+              <div class="flex items-center space-x-2">
                 <div class="flex-shrink-0">
                   <img
                     class="w-8 h-8 rounded-full"
@@ -89,7 +89,7 @@ const Feeds = () => {
               </div>
             </li>
             <li class="pt-3 pb-0 sm:pt-4">
-              <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-2">
                 <div class="flex-shrink-0">
                   <img
                     class="w-8 h-8 rounded-full"
@@ -132,7 +132,7 @@ const Feeds = () => {
         Feeds
       </h1>
 
-      <div className="h-full overflow-x-hidden w-82 py-2 border border-gray-400 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700 mr-8">
+      <div className="h-full overflow-x-hidden mt-4 w-82 mr-8 py-4 border border-white rounded-lg shadow-lg bg-white dark:bg-gray-800 dark:border-gray-700 ">
         <ActivityLog />
       </div>
 
