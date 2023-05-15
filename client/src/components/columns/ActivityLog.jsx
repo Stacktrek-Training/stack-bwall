@@ -13,7 +13,7 @@ const ActivityLog = () => {
 
   const getUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/users_favorites");
+      const response = await fetch("http://localhost:5000/users_favorites");
       const jsonData = await response.json();
       setUsers(jsonData);
     } catch (err) {
@@ -103,7 +103,7 @@ const ActivityLog = () => {
 
     fetchActivities();
     // Set up interval to fetch new activities every 10 seconds (adjust the interval as needed)
-    const interval = setInterval(fetchActivities, 30000);
+    const interval = setInterval(fetchActivities, 10000);
 
     // Clean up interval on component unmount
     return () => {
@@ -127,50 +127,36 @@ const ActivityLog = () => {
 
   return (
     <div className="max-w-lg mx-auto p-2">
-      {loading ? (
-        // Display a loading indicator if the data is still loading
-        <div>Loading...</div>
-      ) : activities.length === 0 ? (
-        // Display a message when no activities are available
-        <div>No activities found.</div>
-      ) : (
-        // Render activities when data is available
-        activities.map((commit, index) => {
-          const user = users.find((user) => user.username === commit.user);
-          const commitTime = new Date(commit.date + " " + commit.time);
-          const timeAgo = formatTimeAgo(commitTime);
-  
-          const userName = user ? `${user.first_name} ${user.last_name}` : "Unknown";
-          const userUsername = user ? `@${user.username}` : "";
-  
-          return (
-            <div key={index} className="flex items-start py-4">
-              <img
-                src={commit.avatarUrl}
-                alt={commit.user}
-                className="w-10 h-10 rounded-full mr-4"
-              />
-              <div>
-                <div className="text-gray-500 text-sm mb-1">
-                  {commit.date} | {timeAgo}
-                </div>
-                <div>
-                  <div className="text-gray-900 font-bold">
-                    {userName}
-                  </div>
-                  <div className="text-gray-600">{userUsername}</div>
-                </div>
-                <div className="text-gray-500 text-sm mt-1">Commit Message:</div>
-                <div className="text-lg font-medium">{commit.commitMessage}</div>
-                <div className="text-gray-500">{commit.repo}</div>
+      {activities.map((commit, index) => {
+        const user = users.find((user) => user.username === commit.user);
+        const commitTime = new Date(commit.date + " " + commit.time); // Assuming date and time are in valid formats
+        const timeAgo = formatTimeAgo(commitTime);
+        return (
+          <div key={index} className="flex items-start py-4">
+            <img
+              src={commit.avatarUrl}
+              alt={commit.user}
+              className="w-10 h-10 rounded-full mr-4"
+            />
+            <div>
+              <div className="text-gray-500 text-sm mb-1">
+                {commit.date} | {timeAgo}
               </div>
+              <div>
+                <div className="text-gray-900 font-bold">
+                  {user.first_name} {user.last_name}
+                </div>
+                <div className="text-gray-600">@{user.username}</div>
+              </div>
+              <div className="text-gray-500 text-sm mt-1">Commit Message:</div>
+              <div className="text-lg font-medium">{commit.commitMessage}</div>
+              <div className="text-gray-500">{commit.repo}</div>
             </div>
-          );
-        })
-      )}
+          </div>
+        );
+      })}
     </div>
   );
-  
 };
 
 export default ActivityLog;
