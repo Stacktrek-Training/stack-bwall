@@ -241,7 +241,7 @@ const Navbar = () => {
                         </svg>{" "}
                       </div>
                     </div>
-                    <div class="bg-red-600 rounded-lg w-fit mt-8 ml-48 px-1">
+                    <div class="justify-center items-center  bg-red-600 text-white rounded-lg w-fit mt-4 px-1">
                       <button
                         className="modal-close"
                         onClick={handleModalClose}

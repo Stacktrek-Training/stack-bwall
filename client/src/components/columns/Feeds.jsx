@@ -8,8 +8,8 @@ import ActivityLog from "./ActivityLog";
 const Feeds = () => {
   return (
     <>
-      <div class="px-1 flex flex-col align-middle mx-8 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg">
-        <div class="flex items-center justify-center">
+      <div class=" items-center justify-center flex flex-col align-center pr-4 mt-8 w-72 bg-white border border-white rounded-lg shadow-lg">
+      <div class="flex items-center justify-center ">
           <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
             Top of the Month
           </h5>
