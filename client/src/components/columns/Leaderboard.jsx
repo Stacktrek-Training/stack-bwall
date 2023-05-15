@@ -21,7 +21,6 @@ const Leaderboard = () => {
                     <img
                       class="w-8 h-8 rounded-full"
                       src={User}
-                      alt="Thomas image"
                     />
                   </div>
                   <div class="flex-1 min-w-0">

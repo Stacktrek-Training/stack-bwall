@@ -17,7 +17,7 @@ const Dashboard = () => {
         <Events />
       </div>
 
-      <div className="Feed">
+      <div>
         <Feeds />
       </div>
     </body>

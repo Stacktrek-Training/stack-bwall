@@ -4,18 +4,6 @@ import User from "../components/assets/Pragados.png";
 import "flowbite";
 
 const Navbar = () => {
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if (modal) {
-    document.body.classList.add("active-modal");
-  } else {
-    document.body.classList.remove("active-modal");
-  }
-
   return (
     <>
       <div className="flex-auto">
@@ -75,8 +63,6 @@ const Navbar = () => {
                   </div>
                 )}
               </div>
-
-              
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +79,180 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
+              {modalOpen && (
+                <div className="modal fixed inset-0 flex items-center justify-center z-40 ">
+                  <div className="bg-white rounded-lg shadow-lg dark:bg-gray-900 border-black-800 w-fit p-12 mt-8">
+                    <form onSubmit={handleSearchSubmit}>
+                      <div class="relative w-fit p-0.5">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                          <svg
+                            aria-hidden="true"
+                            class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          type="search"
+                          id="default-search"
+                          class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          placeholder="Search..."
+                          required
+                        />
+                      </div>
+                    </form>
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="bg-red-600 rounded-lg w-fit mt-8 ml-48 px-1">
+                      <button
+                        className="modal-close"
+                        onClick={handleModalClose}
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </nav>
