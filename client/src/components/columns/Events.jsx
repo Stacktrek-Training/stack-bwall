@@ -13,7 +13,7 @@ const Events = () => {
         class="relativey w-auto p-4"
         data-carousel="slide"
       >
-        <div class="flex items-center justify-center min-h-fit shadow-lg shadow-offset-x-8 shadow-right relative h-72 flex-wrap overflow-hidden rounded-lg">
+        <div class="flex items-center justify-center min-h-fit shadow-lg shadow-offset-x-8 shadow-right relative h-72 flex-wrap overflow-hidden rounded-lg pb-2">
           <div class=" duration-700 ease-in-out" data-carousel-item>
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
@@ -99,7 +99,7 @@ const Events = () => {
       </div>
 
       <div class="grid-col-1">
-        <div class="px-4 py-2 mt-8 flex flex-col align-middle w-full bg-white rounded-lg shadow-lg bg-white dark:border-gray-700">
+        <div class="px-4 py-1.5 mt-8 flex flex-col align-middle w-full bg-white rounded-lg shadow-lg dark:border-gray-700">
           <div class="grid grid-cols-2">
             {/* Top Voted */}
             <div class="p-2 grid grid-cols-1 px-2.5">
@@ -111,7 +111,7 @@ const Events = () => {
                 role="list"
                 class="divide-y divide-white dark:divide-gray-300"
               >
-                <li class="py-4 sm:py-4">
+                <li class="pt-4">
                   <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
                       <img
@@ -232,7 +232,7 @@ const Events = () => {
                 role="list"
                 class="divide-y divide-white dark:divide-gray-200"
               >
-                <li class="py-4 sm:py-4">
+                <li class="pt-4">
                   <div class="flex items-center space-x-4">
                     <div class="flex-shrink-0">
                       <img

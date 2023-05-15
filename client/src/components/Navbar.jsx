@@ -4,6 +4,7 @@ import User from "../components/assets/Pragados.png";
 import "flowbite";
 const Navbar = () => {
   const [modalOpen, setModalOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const handleModalOpen = () => {
     setModalOpen(true);
@@ -11,6 +12,16 @@ const Navbar = () => {
 
   const handleModalClose = () => {
     setModalOpen(false);
+  };
+
+  const handleSearchInputChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    // Do something with the search term, such as sending it to a server
+    console.log("Search term:", searchTerm);
   };
   return (
     <>
@@ -69,14 +80,8 @@ const Navbar = () => {
               </div>
               {modalOpen && (
                 <div className="modal fixed inset-0 flex items-center justify-center z-40 ">
-                  <div className="bg-gray-200 dark:bg-gray-900 rounded-lg border-black-800 w-fit p-12 mt-8">
-                    <form >
-                      <label
-                        for="default-search"
-                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-                      >
-                        Search
-                      </label>
+                  <div className="bg-white rounded-lg shadow-lg dark:bg-gray-900 border-black-800 w-fit p-12 mt-8">
+                    <form onSubmit={handleSearchSubmit}>
                       <div class="relative w-fit p-0.5">
                         <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                           <svg
@@ -102,12 +107,6 @@ const Navbar = () => {
                           placeholder="Search..."
                           required
                         />
-                        <button
-                          type="submit"
-                          class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                        >
-                          Search
-                        </button>
                       </div>
                     </form>
                     <div class="relative flex items-center space-x-41 bg-white rounded-lg">
@@ -141,10 +140,108 @@ const Navbar = () => {
                             d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
                           />
                         </svg>{" "}
-                        500
                       </div>
                     </div>
-                    <div class="bg-red-600 rounded-lg w-fit py-1">
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="relative flex items-center space-x-41 bg-white rounded-lg">
+                      <div class="flex-shrink-0">
+                        <img
+                          class="w-8 h-8 rounded-full"
+                          src={User}
+                          alt="Neil image"
+                        />
+                      </div>
+                      <div class="flex-1 min-w-0 ">
+                        <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                          Joseph Angelo Progados
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                          Students
+                        </p>
+                      </div>
+                      <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="blue"
+                          viewBox="0 0 24 24"
+                          stroke-width=".5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                          />
+                        </svg>{" "}
+                      </div>
+                    </div>
+                    <div class="bg-red-600 rounded-lg w-fit mt-8 ml-48 px-1">
                       <button
                         className="modal-close"
                         onClick={handleModalClose}

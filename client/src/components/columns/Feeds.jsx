@@ -8,15 +8,15 @@ import ActivityLog from "./ActivityLog";
 const Feeds = () => {
   return (
     <>
-      <div class="px-1 flex flex-col align-middle mr-8 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg">
-        <div class="flex items-center justify-center ">
+      <div class="px-1 flex flex-col align-middle mx-8 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg">
+        <div class="flex items-center justify-center">
           <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
             Top of the Month
           </h5>
         </div>
         <div class="flow-root">
           <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
-            <li class="py-2 sm:py-8">
+            <li class="py-2 sm:py-2">
               <div class="flex items-center space-x-2">
                 <div class="flex-shrink-0">
                   <img
@@ -128,11 +128,11 @@ const Feeds = () => {
         </div>
       </div>
 
-      <h1 className=" mt-4 flex items-center justify-center text-xl font-bold leading-none text-orange-500  dark:text-white mr">
+      <h1 className="mt-4 flex items-center justify-center text-xl font-bold leading-none text-orange-500  dark:text-white">
         Feeds
       </h1>
 
-      <div className="h-full overflow-x-hidden mt-4 w-82 mr-8 py-4 border border-white rounded-lg shadow-lg bg-white dark:bg-gray-800 dark:border-gray-700 ">
+      <div className="max-h-72 overflow-y-scroll w-82 m  py-2 mt-8 border border-white rounded-lg shadow-lg bg-white dark:bg-gray-800 dark:border-gray-700 ">
         <ActivityLog />
       </div>
 
