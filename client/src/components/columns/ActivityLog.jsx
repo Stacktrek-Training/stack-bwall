@@ -1,39 +1,68 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Users } from './users';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 import "flowbite";
-const USERS = Users.map(user => user.username); // Specify the GitHub usernames you want to fetch
-const GITHUB_TOKEN = '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'; // Replace with your GitHub token
+
+const GITHUB_TOKEN =
+  "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"; // Replace with your GitHub token
 
 const ActivityLog = () => {
+  const [users, setUsers] = useState([]);
   const [activities, setActivities] = useState([]);
+  const [loading, setLoading] = useState(true);
 
+  const getUsers = async () => {
+    try {
+      const response = await axios.get("http://localhost:5000/users_favorites");
+      const jsonData = await response.json();
+      setUsers(jsonData);
+    } catch (err) {
+      console.error(err.message);
+    }
+  };
+
+  useEffect(() => {
+    getUsers();
+  }, []);
+
+  const userNames = users.map((user) => user.username);
+  console.log(userNames);
   useEffect(() => {
     const fetchActivities = async () => {
       try {
+        setLoading(true);
         const fetchedActivities = await Promise.all(
-          USERS.map(async (user) => {
+          userNames.map(async (user) => {
             try {
-              const userResponse = await axios.get(`https://api.github.com/users/${user}`, {
-                headers: {
-                  Authorization: `Bearer ${GITHUB_TOKEN}`,
-                },
-              });
+              const userResponse = await axios.get(
+                `https://api.github.com/users/${user}`,
+                {
+                  headers: {
+                    Authorization: `Bearer ${GITHUB_TOKEN}`,
+                  },
+                }
+              );
               const userData = userResponse.data;
               const avatarUrl = userData.avatar_url;
               const name = userData.name;
 
-              const eventsResponse = await axios.get(`https://api.github.com/users/${user}/events`, {
-                headers: {
-                  Authorization: `Bearer ${GITHUB_TOKEN}`,
-                },
-              });
+              const eventsResponse = await axios.get(
+                `https://api.github.com/users/${user}/events`,
+                {
+                  headers: {
+                    Authorization: `Bearer ${GITHUB_TOKEN}`,
+                  },
+                }
+              );
               const eventsData = eventsResponse.data;
-              const commitEvents = eventsData.filter(event => event.type === 'PushEvent');
+              const commitEvents = eventsData.filter(
+                (event) => event.type === "PushEvent"
+              );
               const latestCommitEvents = commitEvents.slice(0, 1); // Retrieve the latest commit event
               if (latestCommitEvents.length > 0) {
                 const latestCommitEvent = latestCommitEvents[0];
-                const latestCommitMessage = latestCommitEvent.payload.commits[0].message;
+                const latestCommitMessage =
+                  latestCommitEvent.payload.commits[0].message;
                 const timestamp = new Date(latestCommitEvent.created_at);
                 const date = timestamp.toLocaleDateString();
                 const time = timestamp.toLocaleTimeString();
@@ -50,60 +79,98 @@ const ActivityLog = () => {
                 return null;
               }
             } catch (error) {
-              console.error('Error:', error);
+              console.error("Error:", error);
               return null;
             }
           })
         );
 
         const sortedActivities = fetchedActivities
-        .filter(activity => activity !== null)
-        .sort((a, b) => {
-          const dateA = new Date(`${a.date} ${a.time}`);
-          const dateB = new Date(`${b.date} ${b.time}`);
-          return dateB - dateA;
-        })
-        .slice(0, 10);
-       // Retrieve the activities of the top 10 users
-      
+          .filter((activity) => activity !== null)
+          .sort((a, b) => {
+            const dateA = new Date(`${a.date} ${a.time}`);
+            const dateB = new Date(`${b.date} ${b.time}`);
+            return dateB - dateA;
+          })
+          .slice(0, 10);
+
         setActivities(sortedActivities);
+        setLoading(false);
       } catch (error) {
-        console.error('Error:', error);
+        console.error("Error:", error);
       }
     };
 
-    // Fetch activities initially
     fetchActivities();
-
     // Set up interval to fetch new activities every 10 seconds (adjust the interval as needed)
-    const interval = setInterval(fetchActivities, 10000);
+    const interval = setInterval(fetchActivities, 30000);
 
     // Clean up interval on component unmount
     return () => {
       clearInterval(interval);
     };
-  }, []);
-
+  }, [users]);
+  // Helper function to format the time measurement
+  function formatTimeAgo(commitTime) {
+    const currentTime = new Date();
+    const timeDiff = Math.abs(currentTime - commitTime);
+    const minutes = Math.floor(timeDiff / (1000 * 60));
+    if (minutes < 1) {
+      return "just now";
+    } else if (minutes < 60) {
+      return `${minutes} min ago`;
+    } else {
+      const hours = Math.floor(minutes / 60);
+      return `${hours} hr ago`;
+    }
+  }
 
   return (
-    <div className=" max-w-lg mx-auto p-2">
-      {activities.map((activity, index) => (
-        <div key={index} className="flex items-center py-4">
-          <img src={activity.avatarUrl} alt={activity.user} className="w-10 h-10 rounded-full mr-4" />
-          <div>
-          <div className="text-gray-900 font-bold">{activity.name}</div>
-            <div className="text-gray-600">{activity.user}</div>
-            <div className="text-lg font-medium">{activity.commitMessage}</div>
-            <div className="text-gray-500">{activity.repo}</div>
-            <div className="text-gray-500 text-sm">{activity.date}</div>
-            <div className="text-gray-500 text-sm">{activity.time}</div>
-          </div>
-        </div>
-      ))}
-    
+    <div className="max-w-lg mx-auto p-2">
+      {loading ? (
+        // Display a loading indicator if the data is still loading
+        <div>Loading...</div>
+      ) : activities.length === 0 ? (
+        // Display a message when no activities are available
+        <div>No activities found.</div>
+      ) : (
+        // Render activities when data is available
+        activities.map((commit, index) => {
+          const user = users.find((user) => user.username === commit.user);
+          const commitTime = new Date(commit.date + " " + commit.time);
+          const timeAgo = formatTimeAgo(commitTime);
+  
+          const userName = user ? `${user.first_name} ${user.last_name}` : "Unknown";
+          const userUsername = user ? `@${user.username}` : "";
+  
+          return (
+            <div key={index} className="flex items-start py-4">
+              <img
+                src={commit.avatarUrl}
+                alt={commit.user}
+                className="w-10 h-10 rounded-full mr-4"
+              />
+              <div>
+                <div className="text-gray-500 text-sm mb-1">
+                  {commit.date} | {timeAgo}
+                </div>
+                <div>
+                  <div className="text-gray-900 font-bold">
+                    {userName}
+                  </div>
+                  <div className="text-gray-600">{userUsername}</div>
+                </div>
+                <div className="text-gray-500 text-sm mt-1">Commit Message:</div>
+                <div className="text-lg font-medium">{commit.commitMessage}</div>
+                <div className="text-gray-500">{commit.repo}</div>
+              </div>
+            </div>
+          );
+        })
+      )}
     </div>
   );
-
+  
 };
 
 export default ActivityLog;

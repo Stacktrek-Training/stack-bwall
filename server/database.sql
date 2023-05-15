@@ -39,3 +39,12 @@ CREATE TABLE events (
 --     description VARCHAR(255) NOT NULL,
 --     event_points INTEGER
 -- );
+CREATE TABLE users_favorites (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    class VARCHAR(255) NOT NULL,
+    favorite INTEGER
+);
