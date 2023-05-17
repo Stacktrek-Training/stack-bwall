@@ -8,7 +8,7 @@ const Leaderboard = () => {
     <>
       <div class="flex items-center justify-center px-8">
         <div class="flex-auto p-2 drop-shadow-xl mt-4 w-72 dark:bg-white rounded-lg bg-white dark:border-gray-300">
-          <div class="flex items-center justify-center mb-4">
+          <div class="flex items-center justify-center mb-2">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Leaderboard
             </h5>

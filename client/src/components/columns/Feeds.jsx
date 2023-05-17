@@ -8,7 +8,7 @@ import ActivityLog from "./ActivityLog";
 const Feeds = () => {
   return (
     <>
-      <div class="px-1 flex flex-col align-middle mx-8 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg">
+      <div class="flex flex-col align-middle mx-8 mb-10 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg">
         <div class="flex items-center justify-center">
           <h5 class="text-xl font-bold leading-none text-orange-500  dark:text-white">
             Top of the Month
@@ -26,14 +26,14 @@ const Feeds = () => {
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                     Joseph Angelo Progados
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                     Students
                   </p>
                 </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="blue"
@@ -62,14 +62,14 @@ const Feeds = () => {
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                     Vonnn Einuj Anre Sabusap
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                     Students
                   </p>
                 </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="blue"
@@ -98,14 +98,14 @@ const Feeds = () => {
                   />
                 </div>
                 <div class="flex-1 min-w-0">
-                  <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                  <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
                     Thomes Lean
                   </p>
                   <p class="text-sm text-gray-500 truncate dark:text-gray-400">
                     Students
                   </p>
                 </div>
-                <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                <div class="inline-flex items-center text-base font-medium text-gray-900 dark:text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="blue"
@@ -132,7 +132,7 @@ const Feeds = () => {
         Feeds
       </h1>
 
-      <div className="max-h-72 overflow-y-scroll w-82 m  py-2 mt-8 border border-white rounded-lg shadow-lg bg-white dark:bg-gray-800 dark:border-gray-700 ">
+      <div className="max-h-72 overflow-y-scroll flex flex-col align-middle mx-8 mb-10 mt-4 w-82 bg-white border border-white rounded-lg shadow-lg ">
         <ActivityLog />
       </div>
 
