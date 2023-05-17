@@ -17,10 +17,11 @@ const Dashboard = () => {
         <Events />
       </div>
 
-      <div>
+      <div className="items-center justify-center md:px-4 xs:mx-auto">
         <Feeds />
       </div>
     </body>
+
   );
 };
 

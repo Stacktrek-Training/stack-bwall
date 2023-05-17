@@ -161,7 +161,7 @@ const Navbar = () => {
                         </div>
                       </section>
                     </div>
-                    <div class="inline-flex items-center bg-red-600 rounded-lg w-fit mt-8 px-1">
+                    <div class="justify-center items-center  bg-red-600 text-white rounded-lg w-fit mt-4 px-1">
                       <button
                         className="modal-close"
                         onClick={handleModalClose}
