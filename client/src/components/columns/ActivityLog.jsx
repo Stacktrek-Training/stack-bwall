@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Users } from './users';
 import "flowbite";
 const USERS = Users.map(user => user.username); // Specify the GitHub usernames you want to fetch
-const GITHUB_TOKEN ="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"; // Replace with your GitHub token
+const GITHUB_TOKEN ="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"; // Replace with your GitHub token
 const ActivityLog = () => {
   const [activities, setActivities] = useState([]);
 

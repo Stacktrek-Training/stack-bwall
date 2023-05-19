@@ -7,7 +7,7 @@ const Leaderboard = () => {
   return (
     <>
       <div class="flex items-center justify-center px-8">
-        <div class="flex-auto p-2 drop-shadow-xl mt-4 w-72 dark:bg-white rounded-lg bg-white dark:border-gray-300">
+        <div class="flex-auto px-2 py-2 drop-shadow-xl mt-4 w-72 dark:bg-white rounded-lg bg-white dark:border-gray-300">
           <div class="flex items-center justify-center mb-2">
             <h5 class="text-xl font-bold leading-none text-orange-500 dark:text-white">
               Leaderboard
@@ -15,7 +15,7 @@ const Leaderboard = () => {
           </div>
           <div class="flow-root">
             <ul role="list">
-              <li class="pt-3 pb-0 sm:pt-4">
+              <li class="pt-3 pb-0 sm:pt-2">
                 <div class="flex items-center space-x-4">
                   <div class="flex-shrink-0">
                     <img
