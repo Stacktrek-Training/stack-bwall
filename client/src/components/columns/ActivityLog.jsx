@@ -4,7 +4,7 @@ import axios from "axios";
 import "flowbite";
 
 const GITHUB_TOKEN =
-  "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"; // Replace with your GitHub token
+  "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"; // Replace with your GitHub token
 
 const ActivityLog = () => {
   const [users, setUsers] = useState([]);
@@ -102,8 +102,8 @@ const ActivityLog = () => {
     };
 
     fetchActivities();
-    // Set up interval to fetch new activities every 10 seconds (adjust the interval as needed)
-    const interval = setInterval(fetchActivities, 10000);
+    // Set up interval to fetch new activities every 60 seconds (adjust the interval as needed)
+    const interval = setInterval(fetchActivities, 60000);
 
     // Clean up interval on component unmount
     return () => {
@@ -127,34 +127,50 @@ const ActivityLog = () => {
 
   return (
     <div className="max-w-lg mx-auto p-2">
-      {activities.map((commit, index) => {
-        const user = users.find((user) => user.username === commit.user);
-        const commitTime = new Date(commit.date + " " + commit.time); // Assuming date and time are in valid formats
-        const timeAgo = formatTimeAgo(commitTime);
-        return (
-          <div key={index} className="flex items-start py-4">
-            <img
-              src={commit.avatarUrl}
-              alt={commit.user}
-              className="w-10 h-10 rounded-full mr-4"
-            />
-            <div>
-              <div className="text-gray-500 text-sm mb-1">
-                {commit.date} | {timeAgo}
+      {loading ? (
+        <div>Loading...</div>
+      ) : activities.length === 0 ? (
+        <div>No activities to display.</div>
+      ) : (
+        activities.map((commit, index) => {
+          const user = users.find((user) => user.username === commit.user);
+          const commitTime = new Date(commit.date + " " + commit.time); // Assuming date and time are in valid formats
+          const timeAgo = formatTimeAgo(commitTime);
+          return (
+            <div
+              key={index}
+              className="relative flex items-center py-4 border-l border-gray-200 dark:border-gray-700"
+            >
+              <div className="w-10 h-10 relative">
+                <img
+                  src={commit.avatarUrl}
+                  alt={commit.user}
+                  className="w-full h-full rounded-full"
+                />
               </div>
-              <div>
-                <div className="text-gray-900 font-bold">
-                  {user.first_name} {user.last_name}
+              <div className="ml-4"> {/* Add a margin-left of 4 units (adjust as needed) */}
+                <div className="text-gray-500 text-sm mb-1">
+                  {commit.date} | {timeAgo}
                 </div>
-                <div className="text-gray-600">@{user.username}</div>
+                <div>
+                  <div className="text-gray-900 font-bold">
+                    {user.first_name} {user.last_name}
+                  </div>
+                  <div className="text-gray-600">@{user.username}</div>
+                </div>
+                <div className="text-gray-500 text-sm mt-1">
+                  Commit Message:
+                </div>
+                <div className="text-lg font-medium">
+                  {commit.commitMessage}
+                </div>
+                <div className="text-gray-500">{commit.repo}</div>
               </div>
-              <div className="text-gray-500 text-sm mt-1">Commit Message:</div>
-              <div className="text-lg font-medium">{commit.commitMessage}</div>
-              <div className="text-gray-500">{commit.repo}</div>
             </div>
-          </div>
-        );
-      })}
+          );
+          
+        })
+      )}
     </div>
   );
 };
