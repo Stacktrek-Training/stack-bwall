@@ -9,11 +9,16 @@ const Events = () => {
   return (
     <>
       <div
-        id=" custom-controls-gallery"
-        class="relativey w-auto pt-2 pb-8"
+        id="custom-controls-gallery"
+        className="relativey  mx-auto mt-3 pt-2 pb-8"
         data-carousel="slide"
+        style={{
+          border: "2px solid transparent",
+          boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 5px px",
+        }}
       >
         <div class="flex items-center justify-center min-h-fit shadow-lg shadow-offset-x-8 shadow-right relative h-80 flex-wrap overflow-hidden rounded-lg">
+
           <div class=" duration-700 ease-in-out" data-carousel-item="active">
             <img
               src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
@@ -99,25 +104,22 @@ const Events = () => {
       </div>
 
 
-      <div class="grid-col-2 px-2 py-2 flex flex-col align-middle bg-white rounded-lg shadow-lg dark:border-gray-700">
+      <div class="flex flex-col align-middle mx-8 mb-5 mt-0 w-82 bg-blue border border-white rounded-lg shadow-lg" style={{ border: '2px solid transparent', boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px" }}>
         <div class="grid grid-cols-2">
-          {/* Top Voted */}
-          <div class="grid grid-cols-1 px-4">
-            <h5 class="text-xl text-center font-bold leading-none text-orange-500  dark:text-white">
+
+          <div class="grid grid-cols-1 mt-4 mb-2 px-4">
+            <h5 class="text-xl text-center font-bold leading-none text-orange-500 dark:text-white">
               Top Favorite
             </h5>
-
-            <ul
-              role="list"
-              class="divide-y divide-white dark:divide-gray-300"
-            >
-              <li class="pt-3">
-                <div class="flex items-center space-x-4">
-                  <div class="flex-shrink-0">
+            <ul role="list" class="divide-y divide-white dark:divide-gray-300">
+              <li class="pt-3 pb-0 sm:pt-4">
+                <div className="flex items-center space-x-4 hover:bg-orange-400 dark:hover:bg-orange-500 rounded">
+                  <div class="flex-shrink-0 ">
                     <img
-                      class="w-8 h-8 rounded-full"
+                      class="w-10 h-10 rounded-full"
                       src={User}
                       alt="Neil image"
+                      style={{ border: "2px solid #ec581d" }}
                     />
                   </div>
                   <div class="flex-1 min-w-0">
@@ -148,12 +150,13 @@ const Events = () => {
                 </div>
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
-                <div class="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 hover:bg-orange-400 dark:hover:bg-orange-500 rounded">
                   <div class="flex-shrink-0">
                     <img
-                      class="w-8 h-8 rounded-full"
+                      class="w-10 h-10 rounded-full"
                       src={User1}
                       alt="Thomas image"
+                      style={{ border: "2px solid #ec581d" }}
                     />
                   </div>
                   <div class="flex-1 min-w-0">
@@ -184,12 +187,13 @@ const Events = () => {
                 </div>
               </li>
               <li class="pt-3 pb-0 sm:pt-4">
-                <div class="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 hover:bg-orange-400 dark:hover:bg-orange-500 rounded">
                   <div class="flex items-center space-x-4 flex-shrink-0">
                     <img
-                      class="w-8 h-8 rounded-full"
+                      class="w-10 h-10 rounded-full"
                       src={User2}
                       alt="Thomas image"
+                      style={{ border: "2px solid #ec581d" }}
                     />
                   </div>
                   <div class="flex-1 min-w-0">
@@ -223,22 +227,20 @@ const Events = () => {
           </div>
 
           {/* Top Performers */}
-          <div>
-            <div class="grid grid-cols-1 px-4">
-              <h5 class="text-xl text-center font-bold leading-none text-orange-500  dark:text-white">
+          <div style={{ marginBottom: "5px" }}>
+            <div class="grid grid-cols-1 mt-4 px-4" >
+              <h5 class="text-xl text-center font-bold leading-none text-orange-500 dark:text-white">
                 Top Performers
               </h5>
-              <ul
-                role="list"
-                class="divide-y divide-white dark:divide-gray-200"
-              >
+              <ul role="list" class="divide-y divide-white dark:divide-gray-200">
                 <li class="pt-4">
-                  <div class="flex items-center space-x-4">
+                  <div className="flex items-center space-x-4 hover:bg-orange-400 dark:hover:bg-orange-500 rounded">
                     <div class="flex-shrink-0">
                       <img
-                        class="w-8 h-8 rounded-full"
+                        class="w-10 h-10 rounded-full"
                         src={User}
                         alt="Neil image"
+                        style={{ border: "2px solid #ec581d" }}
                       />
                     </div>
                     <div class="flex-1 min-w-0">
@@ -269,12 +271,13 @@ const Events = () => {
                   </div>
                 </li>
                 <li class="pt-3 pb-0 sm:pt-4">
-                  <div class="flex items-center space-x-4">
+                  <div className="flex items-center space-x-4 hover:bg-orange-400 dark:hover:bg-orange-500 rounded">
                     <div class="flex-shrink-0">
                       <img
-                        class="w-8 h-8 rounded-full"
+                        class="w-10 h-10 rounded-full"
                         src={User1}
                         alt="Thomas image"
+                        style={{ border: "2px solid #ec581d" }}
                       />
                     </div>
                     <div class="flex-1 min-w-0">
@@ -305,12 +308,13 @@ const Events = () => {
                   </div>
                 </li>
                 <li class="pt-3 pb-0 sm:pt-4">
-                  <div class="flex items-center space-x-4">
+                  <div className="flex items-center space-x-4 hover:bg-orange-400 dark:hover:bg-orange-500 rounded">
                     <div class="flex-shrink-0">
                       <img
-                        class="w-8 h-8 rounded-full"
+                        class="w-10 h-10 rounded-full"
                         src={User2}
                         alt="Thomas image"
+                        style={{ border: "2px solid #ec581d" }}
                       />
                     </div>
                     <div class="flex-1 min-w-0">
