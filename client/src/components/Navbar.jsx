@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../components/assets/stackwall.png";
+import Logo from "../components/assets/stackb.png";
 import User from "../components/assets/Pragados.png";
 import "flowbite";
 const Navbar = () => {
@@ -29,9 +29,9 @@ const Navbar = () => {
         <nav class="border-gray-200 bg-gray-100 dark:bg-gray-800 dark:border-gray-700">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1.5">
             <a href="#" class="flex items-center">
-              <img src={Logo} class="h-8 mr-3" alt="stackbwall Logo" />
+              <img src={Logo} class="h-12 mr-3" alt="stackbwall Logo" />
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                StackBWall
+
               </span>
             </a>
             <div class="flex flex-row-reverse space-x-4 space-x-reverse ...">
@@ -44,6 +44,7 @@ const Navbar = () => {
                   class="w-10 h-10 rounded-full cursor-pointer"
                   src={User}
                   alt="User dropdown"
+                  style={{ border: "2px solid #ec581d" }}
                 />
               </div>
               <div>
@@ -95,12 +96,12 @@ const Navbar = () => {
                     </form>
                     <div class="max-h-72 overflow-y-scroll w-82">
                       <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
-                        <div class=" text-center ">
+                        <div class="text-center">
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center custom-card-shadow">
                             <div class="mb-8">
-                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
+                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" style={{ border: "3px solid blue" }}/>
                             </div>
                             <div class="text-center">
                               <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
@@ -108,9 +109,9 @@ const Navbar = () => {
                               <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Vote</button>
                             </div>
                           </div>
-                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center custom-card-shadow">
                             <div class="mb-8">
-                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
+                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" style={{ border: "3px solid blue" }}/>
                             </div>
                             <div class="text-center">
                               <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
@@ -118,9 +119,9 @@ const Navbar = () => {
                               <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Vote</button>
                             </div>
                           </div>
-                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center custom-card-shadow">
                             <div class="mb-8">
-                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo" />
+                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo" style={{ border: "3px solid blue" }}/>
                             </div>
                             <div class="text-center">
                               <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
@@ -128,9 +129,9 @@ const Navbar = () => {
                               <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Vote</button>
                             </div>
                           </div>
-                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center custom-card-shadow">
                             <div class="mb-8">
-                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
+                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" style={{ border: "3px solid blue" }}/>
                             </div>
                             <div class="text-center">
                               <p class="text-xl text-gray-700 font-bold mb-2">Dany Bailey</p>
@@ -138,9 +139,9 @@ const Navbar = () => {
                               <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Vote</button>
                             </div>
                           </div>
-                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center custom-card-shadow">
                             <div class="mb-8">
-                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" />
+                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80" alt="photo" style={{ border: "3px solid blue" }}/>
                             </div>
                             <div class="text-center">
                               <p class="text-xl text-gray-700 font-bold mb-2">Lucy Carter</p>
@@ -148,9 +149,9 @@ const Navbar = () => {
                               <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Vote</button>
                             </div>
                           </div>
-                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center">
+                          <div class="w-full bg-white rounded-lg p-12 flex flex-col justify-center items-center custom-card-shadow">
                             <div class="mb-8">
-                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo" />
+                              <img class="object-center object-cover rounded-full h-36 w-36" src="https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1176&q=80" alt="photo" style={{ border: "3px solid blue" }}/>
                             </div>
                             <div class="text-center">
                               <p class="text-xl text-gray-700 font-bold mb-2">Jade Bradley</p>
